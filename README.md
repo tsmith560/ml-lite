@@ -5,7 +5,7 @@ A lighthearted recommender system that pairs light beers, swag, and summer songs
 
 # Features
 - Randomly recommends a beer, swag item, and song based on optional user tags
-- Easter egg for a special Miller. Lite. moment with cursed swag and exclusive content
+- Easter egg for a special moment with cursed swag and exclusive content
 - Interactive Streamlit app for easy use and fun exploration
 - Data-driven from curated CSV datasets
 
