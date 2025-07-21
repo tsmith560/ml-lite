@@ -1,20 +1,16 @@
-# Unified recommender system with unified output
-
-from src.recommender import (
-    recommend_random_beer,
-    recommend_random_swag,
-    recommend_random_song
+from .recommender import (
+    recommend_beer_by_tags,
+    recommend_swag_by_tags,
+    recommend_song_by_tags
 )
 
-def generate_miller_moment(beer_df, swag_df, song_df):
-    beer = recommend_random_beer(beer_df)
-    swag = recommend_random_swag(swag_df)
-    song = recommend_random_song(song_df)
+def generate_miller_moment(beer_df, swag_df, song_df, tags=None):
+    beer = recommend_beer_by_tags(beer_df, tags)
+    swag = recommend_swag_by_tags(swag_df, tags)
+    song = recommend_song_by_tags(song_df, tags)
 
-    moment = {
+    return {
         "beer": beer,
         "swag": swag,
         "song": song
     }
-
-    return moment
