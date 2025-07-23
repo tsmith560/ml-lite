@@ -1,6 +1,13 @@
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent / "src"))
+
 #Streamlit basic app code
 import streamlit as st
-from src.miller_moment import generate_miller_moment
+
+#Import Miller Moment
+from miller_moment import generate_miller_moment
 import pandas as pd
 
 # Load data csv's

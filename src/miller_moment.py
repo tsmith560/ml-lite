@@ -1,3 +1,10 @@
+from recommender import (
+    recommend_beer_by_tags,
+    recommend_swag_by_tags,
+    recommend_song_by_tags
+)
+
+
 def generate_miller_moment(beer_df, swag_df, song_df, tags=None):
     # Easter egg trigger phrase check
     if tags and any("not miller lite" in tag.lower() for tag in tags):
@@ -13,7 +20,7 @@ def generate_miller_moment(beer_df, swag_df, song_df, tags=None):
         swag = {
             "name": "The Cursed Beer-A-Mid",
             "description": "So many Miller Lites for the super Miller Lite fan!",
-            "image_path": "/Users/thirstsnake/Desktop/ml-lite/easter_egg/miller_lite_beeramid.jpg"
+            "image_path": st.image('https://raw.githubusercontent.com/tsmith560/ml-lite/main/assets/miller_lite_beeramid.jpg')
         }
 
         song = {

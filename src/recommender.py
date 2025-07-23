@@ -1,6 +1,6 @@
 # recommender.py
 
-from .utils import (
+from utils import (
     recommend_random_beer,
     recommend_random_swag,
     recommend_random_song
