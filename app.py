@@ -77,23 +77,6 @@ tag_input = st.text_input("Enter your tags (comma separated):", "")
 tags = [tag.strip().lower() for tag in tag_input.split(",")] if tag_input else None
 
 # Results Section (also wrapped in opaque box)
-# Add CSS for opaque yellow box around results container
-st.markdown(
-    """
-    <style>
-    .opaque-yellow-box {
-        background-color: rgba(255, 255, 0, 0.8);  /* bright yellow, mostly opaque */
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 if st.button("Generate ML Moment"):
     moment = generate_miller_moment(beer_df, swag_df, song_df, tags)
 
@@ -108,10 +91,3 @@ if st.button("Generate ML Moment"):
     st.markdown(f"[Listen on Spotify]({moment['song']['spotify_url']})")  # Keep this markdown for clickable link
 
     st.markdown('</div>', unsafe_allow_html=True)
-
-
-
-
-
-
-
