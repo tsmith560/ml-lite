@@ -20,6 +20,24 @@ def load_data():
 
 beer_df, swag_df, song_df = load_data()
 
+# Def set background function with hosted asset
+def set_background():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://raw.githubusercontent.com/tsmith560/ml-lite/main/assets/ml_lite_bg.jpg");
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+#Call set background function
+set_background()
+
 st.title("🍺 ML Lite: Miller Moment Generator")
 
 st.markdown("""
