@@ -38,15 +38,15 @@ def set_background():
 #Call set background function
 set_background()
 
-st.title("🍺 ML Lite: Miller Moment Generator")
+st.title("🍺 ML Lite: ML-Crafted Hot Summer Sizzle Generator")
 
 st.markdown("""
 ## Welcome to **ML Lite: The Recommender You Can Crush All Summer**
-This is your ultimate *cursed* summer recommender system. Think hot pavement, fishing with your uncle, and hearing Alan Jackson on the gas station speakers.
+This is your ultimate *cursed* summer recommender system. Enjoy it at your favorite local gas station.
 
 Just enter a few tags that describe your vibe (e.g. `river`, `American`, `tragedy`, `country`, `ripped jeans`) and we’ll find the perfect light beer, summer anthem, and seasonal swag to match your moment.
 
-⚠️ Warning: Saying “anything BUT Miller Lite” triggers something... unholy.
+⚠️ Warning: Perfectly accurate every time. Always. Flawless. Grab yourself a cold one!
 """)
 
 
